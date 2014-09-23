@@ -1,9 +1,10 @@
-package fed.it.neuralnet;
+package com.gmail.federico98.giannetto.neuralnet;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import fed.it.neuralnet.components.Neuron;
+import com.gmail.federico98.giannetto.neuralnet.components.Neuron;
+
 
 public class Manager {
 	
@@ -21,6 +22,7 @@ public class Manager {
 	 * @param inputNeuronsCount - The number of input neurons *COULD CHANGE*
 	 */
 	public static void createNetwork(int layerscount, int neuronsPerLayer, int outputNeuronsCount, int inputNeuronsCount) { // Possible OutpuNeurons ?
+		System.out.println("Building the network...");
 		layerCounter = 0;					// This could disappear
 		inputNeurons = inputNeuronsCount;	//   "    "       "
 		outputNeurons = outputNeuronsCount;
@@ -32,10 +34,8 @@ public class Manager {
 	
 	
 	// Send values
-	public static void sendValue(List<Neuron> inputNeurons, List<Double> inValues) {
-		for(Layer layer : layers) {
-			
-		}
+	public static void sendValue(List<Double> inValues) {
+		
 	}
 	
 	/**

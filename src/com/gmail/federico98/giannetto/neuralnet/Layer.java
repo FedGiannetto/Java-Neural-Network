@@ -1,9 +1,10 @@
-package fed.it.neuralnet;
+package com.gmail.federico98.giannetto.neuralnet;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import fed.it.neuralnet.components.Neuron;
+import com.gmail.federico98.giannetto.neuralnet.components.Neuron;
+
 
 public class Layer {
 
@@ -18,16 +19,16 @@ public class Layer {
 		
 		int idNeuronInNextLayer = 0;
 		
+	}
+	
+	public void createConnections(int id) {
 		// Creates the connections
-		for(Neuron neur : neurons) {
-			neur.createConnection(idNeuronInNextLayer);
-			idNeuronInNextLayer++;
-			// Tecnically this isn't necessary, but we try to support an eventual net with layers with different
-			// numbers of neurons
-			if(idNeuronInNextLayer == Manager.nextLayerCount(this.layerCount + 1)) {
-				break;
-			}
-		}
+				for(Neuron neur : neurons) {
+					// neur.createConnection(idNeuronInNextLayer);
+					// idNeuronInNextLayer++;
+					
+					Manager.nextLayerCount(this.layerCount + 1);
+				}
 	}
 	
 	public int getNeuronsCount() {

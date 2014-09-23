@@ -1,4 +1,4 @@
-package fed.it.neuralnet.components;
+package com.gmail.federico98.giannetto.neuralnet.components;
 
 import java.util.ArrayList;
 import java.util.List;

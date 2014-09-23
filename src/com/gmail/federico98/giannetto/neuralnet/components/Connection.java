@@ -1,4 +1,4 @@
-package fed.it.neuralnet.components;
+package com.gmail.federico98.giannetto.neuralnet.components;
 
 public class Connection {
 	
